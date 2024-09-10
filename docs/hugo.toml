@@ -1,4 +1,4 @@
-baseURL = "https://azure.github.io/AzureLandingZones"
+baseURL = "https://azure.github.io/Azure-Landing-Zones"
 languageCode = "en-us"
 title = "Azure Landing Zones Documentation"
 description = "Documentation site for the Azure Landing Zones."
@@ -36,7 +36,7 @@ geekdocLogo = "img/alzlibrary-logo-square.png"
 
 # (Optional, default false) Render menu from data file in 'data/menu/main.yaml'.
 # See also https://geekdocs.de/usage/menus/#bundle-menu.
-geekdocMenuBundle = true
+geekdocMenuBundle = false
 
 # (Optional, default false) Collapse all menu entries, can not be overwritten
 # per page if enabled. Can be enabled per page via 'geekdocCollapseSection'.
@@ -52,7 +52,7 @@ geekdocBreadcrumb = true
 
 # (Optional, default none) Set source repository location. Used for 'Edit page' links.
 # You can also specify this parameter per page in front matter.
-geekdocRepo = "https://github.com/Azure/AzureLandingZones"
+geekdocRepo = "https://github.com/Azure/Azure-Landing-Zones"
 
 # (Optional, default none) Enable 'Edit page' links. Requires 'geekdocRepo' param
 # and the path must point to the parent directory of the 'content' folder.
@@ -117,4 +117,4 @@ geekdocFileTreeSortBy = "title"
 # Could be used if you want to define a default license for your content.
 [params.geekdocContentLicense]
 name = "MIT License"
-link = "https://github.com/Azure/AzureLandingZones?tab=MIT-1-ov-file#readme"
+link = "https://github.com/Azure/Azure-Landing-Zones?tab=MIT-1-ov-file#readme"
