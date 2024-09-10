@@ -8,6 +8,8 @@ This site contains documentation for the Azure Landing Zones software:
 
 It will help you to deploy and configure the Azure Landing Zones in your environment.
 
+Please see the documentation site <https://azure.github.io/Azure-Landing-Zones/>
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
