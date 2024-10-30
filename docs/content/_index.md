@@ -20,7 +20,7 @@ Please see our [documentation on Learn](https://learn.microsoft.com/azure/cloud-
 
 The Azure Landing Zones journey is a multi-step process that starts with bootstrapping your environment and ends with the deployment of workloads.
 
-{{< img name="alz-journey" size="large" lazy=true >}}
+{{< img name="alz-journey" size="origin" lazy=true >}}
 
 ### Bootstrap your environment
 
