@@ -11,7 +11,7 @@ resources:
 
 For the majority of users, this is the place to start. The quick start is a step by step guide to get your Azure Landing Zone environment up and running.
 
-Now follow the [Quick Start]({{< relref "quickstart" >}}) guide.
+Now follow the [Quick Start]({{< relref "1_prerequisites" >}}) guide.
 
 ## Advanced Users
 
