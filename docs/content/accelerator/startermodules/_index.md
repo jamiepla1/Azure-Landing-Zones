@@ -1,5 +1,6 @@
 ---
 title: Starter modules
+geekdocCollapseSection: true
 ---
 
 The Azure landing zones accelerator includes a number of starter modules that provide opinionated implementations of the Bicep or Terraform Azure landing zones modules.

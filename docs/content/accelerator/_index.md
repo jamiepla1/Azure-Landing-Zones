@@ -1,5 +1,6 @@
 ---
 title: Accelerator
+geekdocCollapseSection: true
 resources:
   - name: components
     src: img/components.png

@@ -1,5 +1,5 @@
 ---
-title: Phase 2c - Local filesystem
+title: 2.c - Local filesystem
 ---
 
 You can choose to bootstrap with `bicep` or `terraform` skip to the relevant section below to do that.
@@ -112,7 +112,7 @@ The following inputs can also be supplied via environment variables. This may be
     | - | - | -- | --- |
     | `iac_type` | `ALZ` | `terraform` | This is the choice of `bicep` or `terraform`. Keep this as `terraform` for this example. |
     | `bootstrap_module_name` | `ALZ` | `alz_local` | This is the choice of Version Control System. Keep this as `alz_local` for this example. |
-    | `starter_module_name` | `ALZ` | `complete_multi_region` | This is the choice of [Starter Modules]({{< relref "../startermodules" >}}), which is the baseline configuration you want for your Azure landing zone. Choose `complete_multi_region`, `complete`, `hubnetworking` or `basic` for this example. |
+    | `starter_module_name` | `ALZ` | `complete_multi_region` | This is the choice of [Starter Modules]({{< relref "../../startermodules" >}}), which is the baseline configuration you want for your Azure landing zone. Choose `complete_multi_region`, `complete`, `hubnetworking` or `basic` for this example. |
     | `bootstrap_location` | `TF_VAR` | `<region>` | Replace `<region>` with the Azure region where you would like to deploy the bootstrap resources in Azure. This field expects the `name` of the region, such as `uksouth`. You can find a full list of names by running `az account list-locations -o table`. |
     | `starter_locations` | `TF_VAR` | `[<region-1>,<region-2>]` | Replace `<region-1>` and `<region-2>` with the Azure regions where you would like to deploy the starter module resources in Azure. This field expects the `name` of the regions in and array, such as `["uksouth", "ukwest"]`. You can find a full list of names by running `az account list-locations -o table`. |
     | `root_parent_management_group_id` | `TF_VAR` | `""` | This is the id of the management group that will be the parent of the management group structure created by the accelerator. If you are using the `Tenant Root Group` management group, you leave this as an empty string `""` or supply the tenant id. |
@@ -129,12 +129,12 @@ The following inputs can also be supplied via environment variables. This may be
     | `architecture_definition_name` | `TF_VAR` | N/A | This is the name of the architecture definition to use when applying the ALZ archetypes via the architecture definition template. This is only relevant to some starter modules, such as the `sovereign_landing_zone` starter module. This defaults to `null`. |
 
 1. Now head over to your chosen starter module documentation to get the specific inputs for that module. Come back here when you are done.
-    - [Terraform Complete Multi Region Starter Module]({{< relref "../startermodules/terraformcompletemultiregion" >}}): Management groups, policies, Multi Region hub networking with fully custom configuration.
-    - [Terraform Financial Services Industry Landing Zone Starter Module]({{< relref "../startermodules/terraformfsi" >}}): Management groups, policies, hub networking for the Financial Services Industry Landing Zone.
-    - [Terraform Sovereign Landing Zone Starter Module]({{< relref "../startermodules/terraformsovereign" >}}): Management groups, policies, hub networking for the Sovereign Landing Zone.
-    - [Terraform Basic Starter Module]({{< relref "../startermodules/terraformbasic" >}}): Management groups and policies.
-    - [Terraform Hub Networking Starter Module]({{< relref "../startermodules/terraformhubnetworking" >}}): Management groups, policies and hub networking.
-    - [Terraform Complete Starter Module]({{< relref "../startermodules/terraformcomplete" >}}): Management groups, policies, hub networking with fully custom configuration.
+    - [Terraform Complete Multi Region Starter Module]({{< relref "../../startermodules/terraformcompletemultiregion" >}}): Management groups, policies, Multi Region hub networking with fully custom configuration.
+    - [Terraform Financial Services Industry Landing Zone Starter Module]({{< relref "../../startermodules/terraformfsi" >}}): Management groups, policies, hub networking for the Financial Services Industry Landing Zone.
+    - [Terraform Sovereign Landing Zone Starter Module]({{< relref "../../startermodules/terraformsovereign" >}}): Management groups, policies, hub networking for the Sovereign Landing Zone.
+    - [Terraform Basic Starter Module]({{< relref "../../startermodules/terraformbasic" >}}): Management groups and policies.
+    - [Terraform Hub Networking Starter Module]({{< relref "../../startermodules/terraformhubnetworking" >}}): Management groups, policies and hub networking.
+    - [Terraform Complete Starter Module]({{< relref "../../startermodules/terraformcomplete" >}}): Management groups, policies, hub networking with fully custom configuration.
 
 1. In your PowerShell Core (pwsh) terminal run the module:
 

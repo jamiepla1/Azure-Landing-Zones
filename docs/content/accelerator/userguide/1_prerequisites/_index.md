@@ -1,5 +1,6 @@
 ---
-title: Phase 1 - Prerequisites
+title: 1. Prerequisites
+geekdocCollapseSection: true
 ---
 
 Phase 1 of the accelerator is to setup your pre-requisites. Follow the steps below to do that.
@@ -15,7 +16,7 @@ You'll need to install the following tools before getting started.
 
 ## Azure Subscriptions
 
-We recommend setting up 3 subscriptions for Azure landing zones. These are management, identity and connectivity. See our [advanced scenarios]({{< relref "../advancedscenarios" >}}) section for alternatives.
+We recommend setting up 3 subscriptions for Azure landing zones. These are management, identity and connectivity. See our [advanced scenarios]({{< relref "advancedscenarios" >}}) section for alternatives.
 
 - Management: This is used to deploy the bootstrap and management resources, such as log analytics and automation accounts.
 - Identity: This is used to deploy the identity resources, such as Azure AD and Azure AD Domain Services.

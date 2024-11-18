@@ -1,5 +1,6 @@
 ---
-title: Phase 2 - Run PowerShell
+title: 2. Run PowerShell
+geekdocCollapseSection: true
 ---
 
 Phase 2 of the accelerator is to run the bootstrap. Follow the steps below to do that.

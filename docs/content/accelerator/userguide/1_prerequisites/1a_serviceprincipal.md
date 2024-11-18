@@ -1,5 +1,5 @@
 ---
-title: Phase 1a - Authenticating via Service Principal
+title: 1.a - Authenticating via Service Principal
 ---
 
 ## Authenticate via Service Principal (Skip this if using a User account)
