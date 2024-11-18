@@ -1,5 +1,5 @@
 ---
-title: 2.a - GitHub
+title: 2.a GitHub
 ---
 
 You can choose to bootstrap with `bicep` or `terraform` skip to the relevant section below to do that.

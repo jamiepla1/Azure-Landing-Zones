@@ -1,5 +1,5 @@
 ---
-title: 2.c - Local filesystem
+title: 2.c Local filesystem
 ---
 
 You can choose to bootstrap with `bicep` or `terraform` skip to the relevant section below to do that.
