@@ -1,6 +1,7 @@
 ---
 title: Terraform
 geekdocCollapseSection: true
+weight: 20
 ---
 
 ALZ ❤️ AVM - A new approach to Azure Landing Zones with Terraform

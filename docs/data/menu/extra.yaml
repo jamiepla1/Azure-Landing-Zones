@@ -1,5 +1,8 @@
 ---
 header:
+  - name: Home
+    ref: /
+    icon: gdoc_home
   - name: GitHub
     ref: https://github.com/Azure/Azure-Landing-Zones
     icon: gdoc_github

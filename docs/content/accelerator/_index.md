@@ -1,6 +1,7 @@
 ---
 title: Accelerator
 geekdocCollapseSection: true
+weight: 20
 resources:
   - name: components
     src: img/components.png

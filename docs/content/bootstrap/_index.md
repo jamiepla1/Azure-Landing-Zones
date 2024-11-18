@@ -1,5 +1,6 @@
 ---
-title: Bootstrap your environment
+title: Bootstrap
+weight: 10
 ---
 
 Before we begin our Azure Landing Zones journey proper, we need some pre-requisites in place.

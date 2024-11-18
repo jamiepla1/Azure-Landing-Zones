@@ -38,4 +38,4 @@ Finally, run `terraform apply` to create the resources.
 
 ## Next Steps
 
-Add networking components to your Azure Landing Zone by following the [Networking]({{< relref "terraform/networking/" >}}) guide.
+Add networking components to your Azure Landing Zone by following the [Networking]({{< relref "terraform/2_networking/" >}}) guide.
