@@ -36,7 +36,7 @@ geekdocLogo = "img/alzlibrary-logo-square.png"
 
 # (Optional, default false) Render menu from data file in 'data/menu/main.yaml'.
 # See also https://geekdocs.de/usage/menus/#bundle-menu.
-geekdocMenuBundle = false
+geekdocMenuBundle = true
 
 # (Optional, default false) Collapse all menu entries, can not be overwritten
 # per page if enabled. Can be enabled per page via 'geekdocCollapseSection'.
@@ -47,9 +47,6 @@ geekdocAlign = "left"
 
 # Default include nav
 geekdockNav = true
-
-# Defautl include anchor
-geekdockAnchor = true
 
 # (Optional, default true) Show page navigation links at the bottom of each
 # docs page (bundle menu only).
