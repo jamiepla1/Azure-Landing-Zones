@@ -1,6 +1,7 @@
 ---
-title: Quickstart
+title: User guide
 geekdocCollapseSection: true
+weight: 10
 resources:
   - name: alz-accelerator-overview
     src: img/alz-terraform-accelerator.png
@@ -11,7 +12,7 @@ resources:
 
 For the majority of users, this is the place to start. The quick start is a step by step guide to get your Azure Landing Zone environment up and running.
 
-Now follow the [Quick Start]({{< relref "1_prerequisites" >}}) guide.
+Now follow the [introduction](#introduction) below.
 
 ## Advanced Users
 

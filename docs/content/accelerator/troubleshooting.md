@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+weight: 15
 ---
 Having trouble using the module and unable to find a solution in the Wiki?
 

@@ -1,5 +1,6 @@
 ---
 title: Upgrade guide
+weight: 20
 ---
 
 Although the accelerator is designed to be a one-time run, we have some rudimentary support for automatically upgrading to newer versions of the accelerator.

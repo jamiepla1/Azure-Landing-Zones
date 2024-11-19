@@ -23,13 +23,20 @@ This will prevent a new major version from being used, which could introduce bre
 
 ## Add the ALZ Management module
 
+{{< hint type=warning title="Cost Warning" >}}
+You will incur costs for the data collected in the Log Analytics workspace.
+Set a value for the [`log_analytics_workspace_daily_quota_gb`](https://registry.terraform.io/modules/Azure/avm-ptn-alz-management/azurerm/latest#input_log_analytics_workspace_daily_quota_gb) input in order to have a predictable cost.
+
+However, you should use care when setting a daily cap because when data collection stops, your ability to observe and receive alerts when the health conditions of your resources will be impacted.
+{{< /hint >}}
+
 Create a file called `main.tf` in the same directory and add the following code:
 
 {{< include file="/static/examples/tf/1_management/main.tf" language="terraform" >}}
 
 ## Plan and apply
 
-We recommend using CI/CD to deploy your infrastructure, the Accelerator is a great way to get started with this.
+We recommend using CI/CD to deploy your infrastructure, the [Accelerator]({{< relref "../../accelerator" >}}) is a great way to get started with this.
 However you can also run Terraform locally:
 
 Run `terraform init` to download the module and initialize the directory.

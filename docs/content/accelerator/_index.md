@@ -25,7 +25,7 @@ If you are using self-hosted versions of these services or another VCS, you can 
 
 ## Accelerator features
 
-The accelerator bootstraps a continuous delivery environment for you. It supports both the Azure DevOps and GitHub version control system (VCS). It uses the [ALZ](https://www.powershellgallery.com/packages/ALZ) PowerShell module to gather required user input and apply a Terraform module to configure the bootstrap environment.
+The accelerator bootstraps a continuous delivery environment for you. It supports both the Azure DevOps and GitHub version control system (VCS). It uses the [ALZ PowerShell module](https://www.powershellgallery.com/packages/ALZ) to gather required user input and apply a Terraform module to configure the bootstrap environment.
 
 {{< hint type=note >}}
 For Bicep users, the accelerator uses Terraform to bootstrap the environment only. Bicep is used to deploy and update the Azure landing zone.

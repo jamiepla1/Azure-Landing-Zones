@@ -1,5 +1,6 @@
 ---
 title: YAML Schema Reference
+weight: 30
 ---
 
 ## `archetypes`

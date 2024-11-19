@@ -1,5 +1,6 @@
 ---
 title: FAQ
+weight: 15
 ---
 
 This article answers frequently asked questions relating to the Azure landing zones Terraform accelerator.

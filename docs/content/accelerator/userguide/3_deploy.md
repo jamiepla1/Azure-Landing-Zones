@@ -74,3 +74,8 @@ NOTE: If you set the `grant_permissions_to_current_user` input to `false` in the
 1. A plan will run and then you'll be prompted to check it and run the deploy.
 1. Type `yes` and hit enter to run the deploy.
 1. The ALZ will now be deployed, this may take some time.
+
+## Fin
+
+This concludes the accelerator. You now have a fully deployed Azure landing zone.
+If you have any issues, please raise them in the [GitHub issues](https://github.com/Azure/ALZ-PowerShell-Module/issues).

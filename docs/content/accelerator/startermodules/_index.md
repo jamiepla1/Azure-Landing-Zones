@@ -1,5 +1,6 @@
 ---
 title: Starter modules
+weight: 15
 geekdocCollapseSection: true
 ---
 
