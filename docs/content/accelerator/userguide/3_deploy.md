@@ -1,5 +1,6 @@
 ---
-title: 3. Deploy
+title: Phase 3 - Run
+weight: 5
 ---
 
 Phase 3 of the accelerator is to run pipeline. Follow the steps below to do that.

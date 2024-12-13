@@ -1,5 +1,5 @@
 ---
-title: 2.c Local filesystem
+title: Local File System
 ---
 
 You can choose to bootstrap with `bicep` or `terraform` skip to the relevant section below to do that.
@@ -29,10 +29,12 @@ Although you can just run `Deploy-Accelerator` and fill out the prompted inputs,
     ┗ 📂output
     ```
 
-1. Open your `inputs.yaml` file in Visual Studio Code (or your preferred editor) and copy the content from [inputs-local-bicep-complete.yaml][example_powershell_inputs_local_bicep_complete] into that file.
+1. Open your `inputs.yaml` file in Visual Studio Code (or your preferred editor) and copy the content from [inputs-local.yaml](https://raw.githubusercontent.com/Azure/alz-bicep/refs/heads/main/accelerator/examples/bootstrap/inputs-local.yaml) into that file.
 1. Check through the file and update each input as required. It is mandatory to update items with placeholders surrounded by angle brackets `<>`:
 
-    >NOTE: The following inputs can also be supplied via environment variables. This may be useful for sensitive values you don't wish to persist to a file. The `Env Var Prefix` denotes the prefix the environment variable should have. The environment variable is formatting is `<PREFIX>_<variable_name>`, e.g. `env:ALZ_iac_type = "bicep"` or `env:TF_VAR_target_directory = "./accelerator/target"`.
+    {{< hint type=tip >}}
+The following inputs can also be supplied via environment variables. This may be useful for sensitive values you don't wish to persist to a file. The `Env Var Prefix` denotes the prefix the environment variable should have. The environment variable is formatting is `<PREFIX>_<variable_name>`, e.g. `$env:ALZ_iac_type = "terraform"` or `$env:TF_VAR_github_personal_access_token = "*****..."`.
+    {{< /hint >}}
 
     | Input | Env Var Prefix | Placeholder | Description |
     | - | - | -- | --- |
@@ -95,24 +97,20 @@ Although you can just run `Deploy-Accelerator` and fill out the prompted inputs,
     ```
 
 1. Open your `inputs.yaml` file in Visual Studio Code (or your preferred editor) and copy the content from the relevant input file for your chosen starter module:
-    1. Complete Multi Region - [inputs-local-terraform-complete-multi-region.yaml][example_powershell_inputs_local_terraform_complete_multi_region]
-    1. Financial Services Industry Landing Zone - [inputs-local-terraform-financial-services-landing-zone.yaml][example_powershell_inputs_local_terraform_financial_service_industry_landing_zone]
-    1. Sovereign Landing Zone - [inputs-local-terraform-sovereign-landing-zone.yaml][example_powershell_inputs_local_terraform_sovereign_landing_zone]
-    1. Basic - [inputs-local-terraform-basic.yaml][example_powershell_inputs_local_terraform_basic]
-    1. Hub Networking - [inputs-local-terraform-hubnetworking.yaml][example_powershell_inputs_local_terraform_hubnetworking]
-    1. Complete - [inputs-local-terraform-complete.yaml][example_powershell_inputs_local_terraform_complete]
-
+    1. Azure Verified Modules for Platform Landing Zone (ALZ) - [inputs-local.yaml](https://raw.githubusercontent.com/Azure/alz-terraform-accelerator/refs/heads/main/templates/platform_landing_zone/examples/bootstrap/inputs-local.yaml)
+    1. Financial Services Industry Landing Zone - [inputs-local.yaml](https://raw.githubusercontent.com/Azure/alz-terraform-accelerator/refs/heads/main/templates/microsoft_cloud_for_industry/financial_services_landing_zone/examples/bootstrap/inputs-local.yaml)
+    1. Sovereign Landing Zone - [inputs-local.yaml](https://raw.githubusercontent.com/Azure/alz-terraform-accelerator/refs/heads/main/templates/microsoft_cloud_for_industry/sovereign_landing_zone/examples/bootstrap/inputs-local.yaml)
 1. Check through the file and update each input as required. It is mandatory to update items with placeholders surrounded by angle brackets `<>`:
 
-    {{< hint type=note >}}
-The following inputs can also be supplied via environment variables. This may be useful for sensitive values you don't wish to persist to a file. The `Env Var Prefix` denotes the prefix the environment variable should have. The environment variable is formatting is `<PREFIX>_<variable_name>`, e.g. `env:ALZ_iac_type = "terraform"` or `env:TF_VAR_target_directory = "./accelerator/target"`.
+    {{< hint type=tip >}}
+The following inputs can also be supplied via environment variables. This may be useful for sensitive values you don't wish to persist to a file. The `Env Var Prefix` denotes the prefix the environment variable should have. The environment variable is formatting is `<PREFIX>_<variable_name>`, e.g. `$env:ALZ_iac_type = "terraform"` or `$env:TF_VAR_github_personal_access_token = "*****..."`.
     {{< /hint >}}
 
     | Input | Env Var Prefix | Placeholder | Description |
     | - | - | -- | --- |
     | `iac_type` | `ALZ` | `terraform` | This is the choice of `bicep` or `terraform`. Keep this as `terraform` for this example. |
     | `bootstrap_module_name` | `ALZ` | `alz_local` | This is the choice of Version Control System. Keep this as `alz_local` for this example. |
-    | `starter_module_name` | `ALZ` | `complete_multi_region` | This is the choice of [Starter Modules]({{< relref "../../startermodules" >}}), which is the baseline configuration you want for your Azure landing zone. Choose `complete_multi_region`, `complete`, `hubnetworking` or `basic` for this example. |
+    | `starter_module_name` | `ALZ` | `platform_landing_zone` | This is the choice of [Starter Modules]({{< relref "../../startermodules" >}}), which is the baseline configuration you want for your Azure landing zone. Choose `platform_landing_zone` for this example. |
     | `bootstrap_location` | `TF_VAR` | `<region>` | Replace `<region>` with the Azure region where you would like to deploy the bootstrap resources in Azure. This field expects the `name` of the region, such as `uksouth`. You can find a full list of names by running `az account list-locations -o table`. |
     | `starter_locations` | `TF_VAR` | `[<region-1>,<region-2>]` | Replace `<region-1>` and `<region-2>` with the Azure regions where you would like to deploy the starter module resources in Azure. This field expects the `name` of the regions in and array, such as `["uksouth", "ukwest"]`. You can find a full list of names by running `az account list-locations -o table`. |
     | `root_parent_management_group_id` | `TF_VAR` | `""` | This is the id of the management group that will be the parent of the management group structure created by the accelerator. If you are using the `Tenant Root Group` management group, you leave this as an empty string `""` or supply the tenant id. |
@@ -129,17 +127,14 @@ The following inputs can also be supplied via environment variables. This may be
     | `architecture_definition_name` | `TF_VAR` | N/A | This is the name of the architecture definition to use when applying the ALZ archetypes via the architecture definition template. This is only relevant to some starter modules, such as the `sovereign_landing_zone` starter module. This defaults to `null`. |
 
 1. Now head over to your chosen starter module documentation to get the specific inputs for that module. Come back here when you are done.
-    - [Terraform Complete Multi Region Starter Module]({{< relref "../../startermodules/terraformcompletemultiregion" >}}): Management groups, policies, Multi Region hub networking with fully custom configuration.
+    - [Terraform Azure Verified Modules for Platform Landing Zone (ALZ)]({{< relref "../../startermodules/terraform-platform-landing-zone" >}}): Management groups, policies, Multi Region hub networking with fully custom configuration.
     - [Terraform Financial Services Industry Landing Zone Starter Module]({{< relref "../../startermodules/terraformfsi" >}}): Management groups, policies, hub networking for the Financial Services Industry Landing Zone.
     - [Terraform Sovereign Landing Zone Starter Module]({{< relref "../../startermodules/terraformsovereign" >}}): Management groups, policies, hub networking for the Sovereign Landing Zone.
-    - [Terraform Basic Starter Module]({{< relref "../../startermodules/terraformbasic" >}}): Management groups and policies.
-    - [Terraform Hub Networking Starter Module]({{< relref "../../startermodules/terraformhubnetworking" >}}): Management groups, policies and hub networking.
-    - [Terraform Complete Starter Module]({{< relref "../../startermodules/terraformcomplete" >}}): Management groups, policies, hub networking with fully custom configuration.
 
 1. In your PowerShell Core (pwsh) terminal run the module:
 
-    {{< hint type=note >}}
-The following examples include 2 input files. This is the recommended approach for the `complete_multi_region` starter module. However, all inputs can be combined into a single file if desired and other starter modules only require a single input file.
+    {{< hint type=tip >}}
+The following examples include 2 input files. This is the recommended approach for the `platform_landing_zone` starter module. However, all inputs into multiple files if desired.
     {{< /hint >}}
 
     ```pwsh
@@ -161,11 +156,3 @@ The following examples include 2 input files. This is the recommended approach f
 ## Next Steps
 
 Now head to [Phase 3]({{< relref "3_deploy" >}})
-
-[example_powershell_inputs_local_bicep_complete]:     examples/powershell-inputs/inputs-local-bicep-complete.yaml "Example - PowerShell Inputs - Local - Bicep - Complete"
-[example_powershell_inputs_local_terraform_basic]:     examples/powershell-inputs/inputs-local-terraform-basic.yaml "Example - PowerShell Inputs - Local - Terraform - Basic"
-[example_powershell_inputs_local_terraform_hubnetworking]:     examples/powershell-inputs/inputs-local-terraform-hubnetworking.yaml "Example - PowerShell Inputs - Local - Terraform - Hub Networking"
-[example_powershell_inputs_local_terraform_complete]:     examples/powershell-inputs/inputs-local-terraform-complete.yaml "Example - PowerShell Inputs - Local - Terraform - Complete"
-[example_powershell_inputs_local_terraform_complete_multi_region]:     examples/powershell-inputs/inputs-local-terraform-complete-multi-region.yaml "Example - PowerShell Inputs - Local - Terraform - Complete Multi Region"
-[example_powershell_inputs_local_terraform_financial_service_industry_landing_zone]:     examples/powershell-inputs/inputs-local-terraform-financial-services-landing-zone.yaml "Example - PowerShell Inputs - Local - Terraform - Financial Services Industry Landing Zone"
-[example_powershell_inputs_local_terraform_sovereign_landing_zone]:     examples/powershell-inputs/inputs-local-terraform-sovereign-landing-zone.yaml "Example - PowerShell Inputs - Local - Terraform - Sovereign Landing Zone"
