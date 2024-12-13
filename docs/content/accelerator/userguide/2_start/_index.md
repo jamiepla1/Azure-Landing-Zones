@@ -11,6 +11,11 @@ Phase 2 of the accelerator is to run the bootstrap. Follow the steps below to do
 The ALZ PowerShell module is used to run the bootstrap phase. It is available on the [PowerShell Gallery](https://www.powershellgallery.com/packages/ALZ/). You can install it using the following steps:
 
 1. Open a PowerShell Core (pwsh) terminal.
+
+    {{< hint type=warning >}}
+Double check you are running in a PowerShell Core terminal. Run `$psversiontable` to check.
+    {{< /hint >}}
+
 2. Check if you already have the ALZ module installed  by running `Get-InstalledModule -Name ALZ`. You'll see something like this if it is already installed:
 
 ```powershell
@@ -24,13 +29,25 @@ Version    Name                                Repository           Description
 
 ## 2.2 Run the Bootstrap
 
-You are now ready to run the bootstrap and setup your environment. If you want to use custom names for your resources or automate the bootstrap, please refer to our [FAQs](https://github.com/Azure/alz-terraform-accelerator/wiki/Frequently-Asked-Questions) section.
+You are now ready to run the bootstrap and setup your environment. If you want to use custom names for your resources or automate the bootstrap, please refer to our [FAQs]({{< relref "../../faq" >}}) section.
 
-The inputs differ depending on the version control system and infrastructure as code tooling you have chosen. Click through to the relevant page for detailed instructions:
+The inputs differ depending on the version control system and infrastructure as code tooling you have chosen. 
 
-- [Azure DevOps]({{< relref "2b_azuredevops" >}})
-- [GitHub]({{< relref "2a_github" >}})
-- [Local file system]({{< relref "2c_local" >}})
+### 2.2.1 Bicep
+
+Click through to the relevant page for detailed instructions:
+
+* [Azure DevOps with Bicep]({{< relref "bicep-azuredevops" >}})
+* [GitHub with Bicep]({{< relref "bicep-github" >}})
+* [Local File System]({{< relref "bicep-local" >}})
+
+### 2.2.2 Terraform
+
+Click through to the relevant page for detailed instructions:
+
+* [Azure DevOps with Terraform]({{< relref "terraform-azuredevops" >}})
+* [GitHub with Terraform]({{< relref "terraform-github" >}})
+* [Local File System with Terraform]({{< relref "terraform-local" >}})
 
 ## Next Steps
 
