@@ -17,6 +17,8 @@ The Azure landing zones [Terraform](https://github.com/Azure/alz-terraform-accel
 
 This accelerator provides an opinionated approach for configuring and securing those modules in a continuous delivery environment. It has end to end automation for bootstrapping the modules.
 
+Head to the [User Guide]({{< relref "userguide" >}}) to get started now.
+
 ## Supported Version Control Systems (VCS)
 
 The accelerator supports both Azure DevOps and GitHub. We are only able to support the hosted versions of these services.
@@ -33,7 +35,7 @@ For Bicep users, the accelerator uses Terraform to bootstrap the environment onl
 
 The accelerator follows a 3 phase approach:
 
-1. Pre-requisites: Instructions to configure credentials and subscriptions.
+1. Prerequisites: Instructions to configure credentials and subscriptions.
 2. Bootstrap: Run the PowerShell module to generate the continuous delivery environment.
 3. Run: Update the module (if needed) to suit the needs of your organization and deploy via continuous delivery.
 
