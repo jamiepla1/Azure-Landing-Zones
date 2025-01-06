@@ -40,7 +40,9 @@ The options can be found in the [Options]({{< relref "options" >}}) documentatio
 
 ## 3 - Advanced
 
-If you were unable to cover all your platform landing zone requirements with our standard scenarios and options, you can use the con
+If you were unable to cover all your platform landing zone requirements with our standard scenarios and options, you can use the advanced configuration settings to further customize your deployment.
+
+The advanced configuration settings can be found in the [Platform landing zone configuration file]({{< relref "configuration" >}}) documentation.
 
 ## Next Steps
 

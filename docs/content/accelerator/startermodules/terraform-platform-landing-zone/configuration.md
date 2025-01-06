@@ -4,11 +4,9 @@ geekdocCollapseSection: true
 weight: 3
 ---
 
-## Platform landing zone configuration file
-
 This section details the available configuration settings / variables in this starter module.
 
-### Custom Replacements (`custom_replacements`)
+## Custom Replacements (`custom_replacements`)
 
 The `custom_replacements` variable builds on the built-in replacements to provide user defined replacements that can be used throughout your configuration. This reduces the complexity of the configuration file by allowing re-use of names and other definitions that may be repeated throughout the configuration. 
 
@@ -21,7 +19,7 @@ The layers and precedence order is:
 3. Resource Group Identifiers: This is for resource group IDs
 4. Resource Identifiers: This is for resource IDs
 
-#### Names (`custom_replacements.names`)
+### Names (`custom_replacements.names`)
 
 Used to define custom names and strings that can be used throughout the configuration file. This can leverage the built-in replacements. 
 
@@ -29,7 +27,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/custom_replacements.names.tfvars" language="terraform" >}}
 
-#### Resource Group Identifiers (`custom_replacements.resource_group_identifiers`)
+### Resource Group Identifiers (`custom_replacements.resource_group_identifiers`)
 
 Used to define resource group IDs that can be used throughout the configuration file. This can leverage the built-in replacements and custom names. 
 
@@ -37,7 +35,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/custom_replacements.resource_group_identifiers.tfvars" language="terraform" >}}
 
-#### Resource Identifiers (`custom_replacements.resource_identifiers`)
+### Resource Identifiers (`custom_replacements.resource_identifiers`)
 
 Used to define resource IDs that can be used throughout the configuration file. This can leverage the built-in replacements, custom names, and resource group IDs. 
 
@@ -45,7 +43,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/custom_replacements.resource_identifiers.tfvars" language="terraform" >}}
 
-### Enable Telemetry (`enable_telemetry`)
+## Enable Telemetry (`enable_telemetry`)
 
 The `enable_telemetry` variable determines whether telemetry about module usage is sent to Microsoft, enabling us to invest in improvements to the Accelerator and Azure Verified Modules.
 
@@ -53,7 +51,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/enable_telemetry.tfvars" language="terraform" >}}
 
-### Tags (`tags`)
+## Tags (`tags`)
 
 The `tags` variable is a default set of tags to apply to resources that support them. In many cases, these tags can be overridden on a per resource basis.
 
@@ -61,7 +59,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/tags.tfvars" language="terraform" >}}
 
-### Management Resource Settings (`management_resource_settings`)
+## Management Resource Settings (`management_resource_settings`)
 
 The `management_resource_settings` variable is used to configure the management resources. This includes the log analytics workspace, automation account, and data collection rules for Azure Monitoring Agent (AMA).
 
@@ -73,7 +71,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/management_resource_settings.tfvars" language="terraform" >}}
 
-### Management Group Settings (`management_group_settings`)
+## Management Group Settings (`management_group_settings`)
 
 The `management_group_settings` variable is used to configure the management groups, policies, and policy role assignments.
 
@@ -85,7 +83,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/management_group_settings.tfvars" language="terraform" >}}
 
-### Connectivity Type (`connectivity_type`)
+## Connectivity Type (`connectivity_type`)
 
 The `connectivity_type` variable is used to choose the type of connectivity to deploy. Supported values are:
 
@@ -97,7 +95,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/connectivity_type.tfvars" language="terraform" >}}
 
-### Connectivity Resource Groups (`connectivity_resource_groups`)
+## Connectivity Resource Groups (`connectivity_resource_groups`)
 
 The `connectivity_resource_groups` variable is used to specify the name and location of the resource groups used for connectivity.
 
@@ -110,7 +108,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/connectivity_resource_groups.tfvars" language="terraform" >}}
 
-### Hub and Spoke Virtual Network Settings (`hub_and_spoke_vnet_settings`)
+## Hub and Spoke Virtual Network Settings (`hub_and_spoke_vnet_settings`)
 
 The `hub_and_spoke_vnet_settings` variable is used to set the non-regional settings for the hub and spoke Virtual Network connectivity option. It is only used to set the DDOS Protection Plan at this time.
 
@@ -120,7 +118,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/hub_and_spoke_vnet_settings.tfvars" language="terraform" >}}
 
-### Hub and Spoke Virtual Networks (`hub_and_spoke_vnet_virtual_networks`)
+## Hub and Spoke Virtual Networks (`hub_and_spoke_vnet_virtual_networks`)
 
 The `hub_and_spoke_vnet_virtual_networks` variable is used to set the regional settings for the hub and spoke Virtual Network connectivity options. This includes Hub Networks, Peering, Routing, Subnets, Firewalls, Virtual Network Gateways, Bastion Hosts, Private DNS Zones, and Private DNS Resolver
 
@@ -156,7 +154,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/hub_and_spoke_vnet_virtual_networks.tfvars" language="terraform" >}}
 
-### Virtual WAN Settings (`virtual_wan_settings`)
+## Virtual WAN Settings (`virtual_wan_settings`)
 
 The `virtual_wan_settings` variable is used to set the non-regional settings for the Virtual WAN connectivity option. It is used to set the Virtual WAN non-regional properties and the DDOS Protection Plan.
 
@@ -168,7 +166,7 @@ Example usage:
 
 {{< include file="/static/examples/tf/accelerator/config/virtual_wan_settings.tfvars" language="terraform" >}}
 
-### Virtual WAN Virtual Hubs (`virtual_wan_virtual_hubs`)
+## Virtual WAN Virtual Hubs (`virtual_wan_virtual_hubs`)
 
 The `hub_and_spoke_vnet_virtual_networks` variable is used to set the regional settings for the Virtual WAN connectivity options. This includes Virtual WAN Hubs, Firewalls, Virtual Network Gateways, Bastion Hosts, Private DNS Zones, and Private DNS Resolver
 
