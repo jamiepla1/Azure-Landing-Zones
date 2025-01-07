@@ -13,7 +13,7 @@ The steps to follow are:
     * `<region>_private_dns_resolver_name` where `<region>` is for each region
     * `<region>_auto_registration_zone_name` where `<region>` is for each region
     * `<region>_private_dns_resolver_subnet_address_prefix` where `<region>` is for each region
-1. Remove the follow configuration settings from `management_group_settings.policy_default_values`:
+1. Remove the following configuration settings from `management_group_settings.policy_default_values`:
     * `private_dns_zone_subscription_id`
     * `private_dns_zone_region`
     * `private_dns_zone_resource_group_name`

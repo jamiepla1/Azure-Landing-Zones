@@ -19,6 +19,7 @@ The steps to follow are:
     * `ddos_protection_plan_resource_group_id`
 1. To keep the code tidy remove the following settings from `custom_replacements.resource_identifiers`:
     * `ddos_protection_plan_id`
+1. Remove the whole `ddos` section from `connectivity_resource_groups`:
 1. Remove the following configuration settings from `management_group_settings.policy_default_values`:
     * `ddos_protection_plan_id`
 1. Add the follow section to `management_group_settings.policy_assignments_to_modify`:

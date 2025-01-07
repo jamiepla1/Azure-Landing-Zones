@@ -18,3 +18,5 @@ To add an additional regions, the process is `copy` -> `paste` -> `update`:
 1. Copy, paste and update the regional IP Ranges in `custom_replacements.names`
 1. Copy, paste and update the regional resource group in `connectivity_resource_groups`
 1. Copy, paste and update the region in `hub_and_spoke_vnet_virtual_networks` or `virtual_wan_virtual_hubs`
+
+For example, to add a third region you would copy, paste, update, replacing `starter_location_02` with `starter_location_03`. 
