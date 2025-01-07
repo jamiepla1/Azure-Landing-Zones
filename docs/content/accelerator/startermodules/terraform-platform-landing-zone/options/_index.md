@@ -18,3 +18,4 @@ The available options are:
 1. [Remove a policy assignment]({{< relref "policy-assignment">}})
 1. [Turn off Azure Monitoring Agent]({{< relref "ama">}})
 1. [Deploy Azure Monitoring Baseline Alerts (AMBA)]({{< relref "amba">}})
+1. [Turn off Defender Plans]({{< relref "defender">}})
