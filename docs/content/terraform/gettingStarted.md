@@ -196,7 +196,7 @@ In this case we must make manual role assignments, and we have listed these belo
 | Policy Assignment Name   | Policy Assignment Scope | Role Definition Names                                                                                   | Role Assignment Scope                       |
 |--------------------------|-------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------|
 | Deploy-AzSqlDb-Auditing  | Landing Zones           | Log Analytics Contributor, SQL Security Manager                                                         | Log Analytics Workspace                     |
-| Deploy-MDFC-DefSQL-AMA*  | Landing Zones           | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Platform                                    |
+| Deploy-MDFC-DefSQL-AMA   | Landing Zones           | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Platform                                    |
 | Deploy-MDFC-DefSQL-AMA   | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
 | Deploy-Private-DNS-Zones | Corp                    | Network Contributor                                                                                     | Resource Group containing Private DNS Zones |
 | Deploy-VM-ChangeTrack    | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor                                               | Landing Zones                               |
