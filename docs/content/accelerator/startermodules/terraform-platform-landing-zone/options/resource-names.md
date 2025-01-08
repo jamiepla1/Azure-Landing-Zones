@@ -6,7 +6,7 @@ weight: 1
 
 Custom resource names are support for all resources. You can customize the resource names by updating the configuration file.
 
-In our example configuration file, you will find all the resource names in the `custom_replacements.names` section.
+In our example configuration file, you will find all the resource names in the `custom_replacements` > `names` block setting.
 
 To update them, you can simply change the value of the resource name in that section.
 
