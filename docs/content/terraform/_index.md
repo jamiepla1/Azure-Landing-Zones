@@ -7,7 +7,7 @@ weight: 20
 ALZ ❤️ AVM - A new approach to Azure Landing Zones with Terraform
 
 Based on continuous feedback from the community, we have adopted a more modular approach to deploying Azure Landing Zones with Terraform.
-This new approach is based on the Azure Virtual Network Module (AVM) and is designed to be more flexible.
+This new approach is based on [Azure Verified Modules](https://aka.ms/avm) (AVM) and is designed to be more flexible.
 
 ## Why have we made this change?
 
@@ -31,7 +31,7 @@ You also asked that we make it easier for organizations to have different teams 
 
 ## What is the new approach?
 
-The new approach is based on  Azure Virtual Network Modules (AVM) and is designed to be more flexible.
+The new approach is based on [Azure Verified Modules](https://aka.ms/avm) and is designed to be more flexible.
 
 Here is the list of modules that pertain to Azure Landing Zones and covers the scope of the original ALZ Terraform module:
 
