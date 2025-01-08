@@ -193,20 +193,20 @@ If you spot an instance odf this, please raise a [GitHub issue](https://github.c
 
 In this case we must make manual role assignments, and we have listed these below:
 
-| Policy Assignment Name    | Assignment Scope | Role Definition Names                                                                                   | Scope                                       |
-|---------------------------|------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| Deploy-AzSqlDb-Auditing*  | Landing Zones    | Log Analytics Contributor, SQL Security Manager                                                         | Log Analytics Workspace                     |
-| Deploy-MDFC-DefSQL-AMA*   | Landing Zones    | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Platform                                    |
-| Deploy-MDFC-DefSQL-AMA*   | Platform         | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
-| Deploy-Private-DNS-Zones  | Corp             | Network Contributor                                                                                     | Resource Group containing Private DNS Zones |
-| Deploy-VM-ChangeTrack*    | Platform         | Reader, Log Analytics Contributor, Monitoring Contributor                                               | Landing Zones                               |
-| Deploy-VM-Monitoring*     | Landing Zones    | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Platform                                    |
-| Deploy-VM-Monitoring*     | Platform         | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
-| Deploy-vmArc-ChangeTrack* | Platform         | Reader, Log Analytics Contributor, Monitoring Contributor                                               | Landing Zones                               |
-| Deploy-vmHybr-Monitoring* | Platform         | Reader, Log Analytics Contributor, Monitoring Contributor, Connected Machine Resource Administrator     | Landing Zones                               |
-| Deploy-VMSS-ChangeTrack*  | Platform         | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
-| Deploy-VMSS-Monitoring*   | Landing Zones    | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Platform                                    |
-| Deploy-VMSS-Monitoring*   | Platform         | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
+| Policy Assignment Name   | Policy Assignment Scope | Role Definition Names                                                                                   | Role Assignment Scope                       |
+|--------------------------|-------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| Deploy-AzSqlDb-Auditing  | Landing Zones           | Log Analytics Contributor, SQL Security Manager                                                         | Log Analytics Workspace                     |
+| Deploy-MDFC-DefSQL-AMA*  | Landing Zones           | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Platform                                    |
+| Deploy-MDFC-DefSQL-AMA   | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
+| Deploy-Private-DNS-Zones | Corp                    | Network Contributor                                                                                     | Resource Group containing Private DNS Zones |
+| Deploy-VM-ChangeTrack    | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor                                               | Landing Zones                               |
+| Deploy-VM-Monitoring     | Landing Zones           | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Platform                                    |
+| Deploy-VM-Monitoring     | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
+| Deploy-vmArc-ChangeTrack | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor                                               | Landing Zones                               |
+| Deploy-vmHybr-Monitoring | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor, Connected Machine Resource Administrator     | Landing Zones                               |
+| Deploy-VMSS-ChangeTrack  | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
+| Deploy-VMSS-Monitoring   | Landing Zones           | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Platform                                    |
+| Deploy-VMSS-Monitoring   | Platform                | Reader, Log Analytics Contributor, Monitoring Contributor, Managed Identity Contributor, VM Contributor | Landing Zones                               |
 
 ### Obtaining the Principal Ids
 
