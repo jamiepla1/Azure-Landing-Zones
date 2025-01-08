@@ -33,7 +33,7 @@ New-Item -ItemType "file" $filePath -Force
     {{< /tab >}}
     {{< tab "Linux / macOS" >}}
 ```pwsh
-$filePath = "c/accelerator/config/lib/archetype_definitions/alz.alz_architecture_definition.json"
+$filePath = "/accelerator/config/lib/archetype_definitions/alz.alz_architecture_definition.json"
 New-Item -ItemType "file" $filePath -Force
 (Invoke-WebRequest "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/refs/heads/main/platform/alz/archetype_definitions/alz.alz_architecture_definition.json").Content | Out-File $filePath -Force
 ```
