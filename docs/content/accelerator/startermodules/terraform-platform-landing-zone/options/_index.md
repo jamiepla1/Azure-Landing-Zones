@@ -64,7 +64,7 @@ For example, if you are asked to delete a block setting, you would:
 1. Select the whole block, including the key and delete all the lines from the configuration file
 1. Save the configuration file
 
-If you are asked to paste code inside a block setting, you would:
+If you are asked to paste configuration inside a block setting, you would:
 
 1. Use <kbd>Ctrl</kbd> + <kbd>F</kbd> to bring up the search dialog
 1. Enter the key in the search dialog. E.g. `management_group_settings`
