@@ -114,7 +114,7 @@ Follow the steps in the [Upgrade Guide]({{< relref "upgradeguide" >}}) to upgrad
 
 ## Questions about Multiple landing zone deployments
 
-### I want to deploy multiple landing zones, but the PowerShell command keeps trying to overrwrite my existing environment
+### I want to deploy multiple landing zones, but the PowerShell command keeps trying to overwrite my existing environment
 
 After bootstrapping, the PowerShell leaves the folder structure intact, including the Terraform state file. This is by design, so you have an opportunity to amend or destroy the environment.
 
