@@ -10,8 +10,8 @@ Phase 1 of the accelerator is to setup your prerequisites. Follow the steps belo
 
 You'll need to install the following tools before getting started.
 
-* PowerShell 7.4 (or newer): [Follow the instructions for your operating system](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell)
-* Azure CLI 2.55.0 (or newer): [Follow the instructions for your operating system](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+- PowerShell 7.4 (or newer): [Follow the instructions for your operating system](https://learn.microsoft.com/powershell/scripting/install/installing-powershell)
+- Azure CLI 2.55.0 (or newer): [Follow the instructions for your operating system](https://learn.microsoft.com/cli/azure/install-azure-cli)
 * Git (any supported version): [Follow the instructions for your opersating system](https://git-scm.com/downloads).
 
 {{< hint type=note >}}
