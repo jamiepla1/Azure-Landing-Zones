@@ -23,5 +23,10 @@ To update the value, add the line log_analytics_workspace_retention_in_days
 
 For example:
 
-{{< highlight terraform "linenos=table" >}} management_resource_settings = { location = ""$${starter_location_01}" log_analytics_workspace_retention_in_days = "365"   log_analytics_workspace_name = "$${log_analytics_workspace_name}"
-... } } {{< / highlight >}}
+{{< highlight terraform "linenos=table" >}} 
+management_resource_settings = 
+{ location = ""$${starter_location_01}" 
+log_analytics_workspace_retention_in_days = "365"   
+log_analytics_workspace_name = "$${log_analytics_workspace_name}"
+... } } 
+{{< / highlight >}}
