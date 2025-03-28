@@ -1,10 +1,10 @@
 ---
-title: 15 - Change the Log Analytics workspace retention
+title: 15 - Log Analytics workspace retention
 geekdocCollapseSection: true
 weight: 15
 ---
 
-You can change the retention period for a Log Analytics workspace from the default 30 days to a set number of days: 
+You can change the [retention period](https://learn.microsoft.com/en-us/troubleshoot/azure/azure-monitor/log-analytics/billing/configure-data-retention) for a Log Analytics workspace from the default 30 days to a set number of days: 
 
 - 30
 - 31
@@ -17,16 +17,14 @@ You can change the retention period for a Log Analytics workspace from the defau
 - 550
 - 730
 
-In our example configuration file, you will find the `Management Resources` block setting.
+In our example configuration file, you will find the`Management Resources`block setting.
 
-To update the value, add the line log_analytics_workspace_retention_in_days
+To update the value, amend or add the line`log_analytics_workspace_retention_in_days`
 
 For example:
-
-{{< highlight terraform "linenos=table" >}} 
-management_resource_settings = 
-{ location = ""$${starter_location_01}" 
+{{< highlight terraform "linenos=table" >}}management_resource_settings = { 
+location                                  = "$${starter_location_01}" 
 log_analytics_workspace_retention_in_days = "365"   
-log_analytics_workspace_name = "$${log_analytics_workspace_name}"
-... } } 
+log_analytics_workspace_name              = "$${log_analytics_workspace_name}"
+... }
 {{< / highlight >}}
